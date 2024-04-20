@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDCx0t9nPX9yaGu-ND7OhiJl5mos79SI-4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>135132657844</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.omerkeskin.SnapchatClone</string>
+	<key>PROJECT_ID</key>
+	<string>snapchatclone-c82a9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snapchatclone-c82a9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:135132657844:ios:69599386c9ad26b4bc3fe1</string>
+</dict>
+</plist>
