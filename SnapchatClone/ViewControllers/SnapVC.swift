@@ -28,28 +28,40 @@ class SnapVC: UIViewController {
         if let snap = selectedSnap{
             
             timeLabel.text = "Time Left: \(snap.difference)h"
+            timeLabel.textColor = .black
+            timeLabel.font = .boldSystemFont(ofSize: 19)
             
             for imageUrl in snap.imageUrlArray{
                 inputArray.append(KingfisherSource(urlString: imageUrl)!)
                 
             }
+            let screenWidth = UIScreen.main.bounds.width
+            let screenHeight = UIScreen.main.bounds.height
             
-            let imageSlideShow = ImageSlideshow(frame: CGRect(x: 40, y: 50, width: self.view.frame.width * 0.8, height: self.view.frame.height * 0.7))
-            imageSlideShow.backgroundColor = UIColor.white
+            let frameWidth: CGFloat = 380
+            let frameHeight: CGFloat = 500
+            
+            let x = (screenWidth - frameWidth) / 2
+            let y = (screenHeight - frameHeight) / 2
+            
+            let imageSlideShow = ImageSlideshow(frame: CGRect(x: x, y: y, width: frameWidth, height: frameHeight))
+            imageSlideShow.backgroundColor = UIColor.systemBackground
+            
             
             let pageIndicator = UIPageControl()
-            pageIndicator.currentPageIndicatorTintColor = UIColor.lightGray
-            pageIndicator.pageIndicatorTintColor = UIColor.black
+            pageIndicator.currentPageIndicatorTintColor = UIColor.black
+            pageIndicator.pageIndicatorTintColor = UIColor.lightGray
             imageSlideShow.pageIndicator = pageIndicator
             
             
             imageSlideShow.contentScaleMode = UIViewContentMode.scaleAspectFit
             imageSlideShow.setImageInputs(inputArray)
             self.view.addSubview(imageSlideShow)
+            self.view.addSubview(timeLabel)
             self.view.bringSubviewToFront(timeLabel)
             
         }
-        
+
         
 
         

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1736ECF12BD0DFB600A764B3 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736ECF02BD0DFB600A764B3 /* SnapVC.swift */; };
 		1736ECF42BD1433800A764B3 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736ECF32BD1433800A764B3 /* UserSingleton.swift */; };
-		1736ECF62BD1634200A764B3 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736ECF52BD1634200A764B3 /* FeedCell.swift */; };
 		1736ECF82BD1665F00A764B3 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736ECF72BD1665F00A764B3 /* Snap.swift */; };
 		17AC103F2BD06262003B66DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC103E2BD06262003B66DC /* AppDelegate.swift */; };
 		17AC10412BD06262003B66DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AC10402BD06262003B66DC /* SceneDelegate.swift */; };
@@ -32,12 +31,12 @@
 		17CF74942BD1BFA400FE7C17 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 17CF74932BD1BFA400FE7C17 /* FirebaseDatabase */; };
 		17CF74962BD1BFA400FE7C17 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 17CF74952BD1BFA400FE7C17 /* FirebaseFirestore */; };
 		17CF74982BD1BFA400FE7C17 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 17CF74972BD1BFA400FE7C17 /* FirebaseStorage */; };
+		17D392F62BD92F5A00941E8A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D392F52BD92F5A00941E8A /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1736ECF02BD0DFB600A764B3 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
 		1736ECF32BD1433800A764B3 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
-		1736ECF52BD1634200A764B3 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		1736ECF72BD1665F00A764B3 /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		17AC103B2BD06262003B66DC /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17AC103E2BD06262003B66DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		17AC105F2BD0DA17003B66DC /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		17AC10612BD0DA25003B66DC /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		17AC10632BD0DA32003B66DC /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		17D392F52BD92F5A00941E8A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,6 @@
 				17AC10662BD0DAB1003B66DC /* Delegates */,
 				17AC10652BD0DA7E003B66DC /* ViewControllers */,
 				17AC10442BD06262003B66DC /* Main.storyboard */,
-				1736ECF52BD1634200A764B3 /* FeedCell.swift */,
 				17AC10472BD06263003B66DC /* Assets.xcassets */,
 				17AC10492BD06263003B66DC /* LaunchScreen.storyboard */,
 				17AC104C2BD06263003B66DC /* Info.plist */,
@@ -124,6 +123,7 @@
 				17AC10612BD0DA25003B66DC /* UploadVC.swift */,
 				17AC10632BD0DA32003B66DC /* SettingsVC.swift */,
 				1736ECF02BD0DFB600A764B3 /* SnapVC.swift */,
+				17D392F52BD92F5A00941E8A /* FeedCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -228,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1736ECF42BD1433800A764B3 /* UserSingleton.swift in Sources */,
+				17D392F62BD92F5A00941E8A /* FeedCell.swift in Sources */,
 				1736ECF82BD1665F00A764B3 /* Snap.swift in Sources */,
 				17AC10602BD0DA17003B66DC /* FeedVC.swift in Sources */,
 				17AC10432BD06262003B66DC /* signInVC.swift in Sources */,
@@ -236,7 +237,6 @@
 				1736ECF12BD0DFB600A764B3 /* SnapVC.swift in Sources */,
 				17AC10412BD06262003B66DC /* SceneDelegate.swift in Sources */,
 				17AC10642BD0DA32003B66DC /* SettingsVC.swift in Sources */,
-				1736ECF62BD1634200A764B3 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

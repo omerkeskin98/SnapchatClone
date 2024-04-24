@@ -72,7 +72,7 @@ class UploadVC: UIViewController, UIImagePickerControllerDelegate, UINavigationC
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        uploadImageView.image = info[.originalImage] as? UIImage
+        uploadImageView.image = info[.editedImage] as? UIImage
         uploadButton.isEnabled = true
         self.dismiss(animated: true, completion: nil)
 

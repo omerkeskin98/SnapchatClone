@@ -12,6 +12,7 @@ import SDWebImage
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
+
     @IBOutlet weak var feedTableview: UITableView!
     let firestoreDB = Firestore.firestore()
     var snapArray = [Snap]()
@@ -23,11 +24,13 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        view.backgroundColor = .systemBackground
         feedTableview.delegate = self
         feedTableview.dataSource = self
 
         getSnapsFromFirebase()
         getUserInfo()
+        
         
     }
     
@@ -118,6 +121,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         return snapArray.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
         cell.feedUsernameLabel.text = snapArray[indexPath.row].username
@@ -125,6 +129,15 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        // Hücre yüksekliğini ayarlamak için fonksiyonu kullanın
+        let cellWidth = tableView.bounds.height
+         let imageHeight = cellWidth // İmageView'in yüksekliği, genişliğinin 3/4'ü olacak şekilde ayarlanıyor.
+         tableView.separatorStyle = .none
+
+        return imageHeight
+         
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSnapVC"{
